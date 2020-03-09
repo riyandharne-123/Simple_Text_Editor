@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <script>
+    function display(){
+        var first = document.getElementById("text_in").value;
+        var second=document.getElementById("text_out").value=first;
+        return second;
+    }
+  
+    </script>
+    <body>
+            <h1 style="font-size:20px; text-align: center;">Text Editor</h1>
+        <h1 style="font-size:20px; text-align: center;">Made by-Riyan Dharne</h1>
+        <br>
+    <input id="text_in" type="textbox" style="height:100px; width: 400px; font-size:20px; background-color:rgb(75, 209, 250);border: 1px solid black;"  placeholder="Enter your text here">
+    <br>
+    <br>
+    <br>
+<input type="submit" value="display text" onclick="display()" style="height:40px; width: 100px;">
+<input type="submit" value="Red" onclick="document.getElementById('text_out').style.color='red'" style="height:40px; width: 100px;">
+<input type="submit" value="Yellow" onclick="document.getElementById('text_out').style.color='yellow'" style="height:40px; width: 100px;">
+<input type="submit" value="Blue" onclick="document.getElementById('text_out').style.color='blue'" style="height:40px; width: 100px;">
+
+    <br>
+    <br>
+<input type="textbox" id="text_out" name="text_out" style="height:100px; width: 400px; font-size:20px; background-color:rgb(254, 255, 255);border: 1px solid black;">
+<br>
+<br>
+<input type="submit" value="CLEAR" onclick="document.getElementById('text_out').value=''; document.getElementById('text_in').value='';document.getElementById('text_out').style.color='black'"; style="height:40px; width: 100px;">   
+</body>
+</html>
